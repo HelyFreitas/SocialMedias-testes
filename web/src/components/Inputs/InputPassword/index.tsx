@@ -15,9 +15,15 @@ const InputPassword = (props: InputsProps) => {
       <C.Input
         placeholder={props.placeholder}
         type={state ? "text" : "password"}
+        required={true}
       />
+
+      
+
+      <C.I></C.I>
+
       <C.ShowPass>
-        <C.BtnShowPass onClick={toggleBtn}>
+        <C.BtnShowPass type="button" onClick={toggleBtn}>
           {state ? (
             <Eye size={20} color="#fff" className="icon" />
           ) : (

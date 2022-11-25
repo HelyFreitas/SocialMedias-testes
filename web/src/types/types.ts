@@ -4,6 +4,8 @@ export interface InputsProps {
 
 export interface FormLoginProps {
   title: string;
+  link: string | any;
+  titlelink: string;
 }
 
 export interface ButtonProps {

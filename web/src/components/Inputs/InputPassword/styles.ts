@@ -1,31 +1,65 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 
   position: relative;
 `;
 
 export const Input = styled.input`
-  width: 300px;
+  position: relative;
+
+  width: 100%;
+
+  padding: 20px 10px 10px;
 
   background-color: transparent;
+
   border: none;
   outline: none;
 
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.03rem;
+  color: rgba(0, 0, 0);
 
-  margin-bottom: 30px;
+  font-size: 1em;
+  letter-spacing: 0.05em;
 
-  ::placeholder {
-    color: #d14eef;
+  :valid,
+  :focus {
+    color: blue;
+    transform: translate(-34px);
+    font-size: 0.75em;
+  }
+`;
+
+export const TextInput = styled.span`
+  position: absolute;
+  left: 0;
+
+  padding: 20px 10px 10px;
+
+  font-size: 1em;
+  font-family: sans-serif;
+
+  color: #8f8f8f;
+
+  pointer-events: none;
+
+  letter-spacing: 0.08em;
+
+  transition: all 0.5s;
+
+  :valid,
+  :focus {
+    color: blue;
+    transform: translate(-34px);
+    font-size: 0.75em;
   }
 `;
 
 export const ShowPass = styled.div``;
+
+export const I = styled.i``;
 
 export const BtnShowPass = styled.button`
   background-color: transparent;

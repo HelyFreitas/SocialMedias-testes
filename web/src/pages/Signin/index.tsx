@@ -1,10 +1,11 @@
-import { FormLogin } from "../../components/FormLogin";
 import * as C from "./styles";
+
+import { Form } from "../../components/Form";
 
 export const Signin = () => {
   return (
     <C.Container>
-      <FormLogin title="Faça seu Login" />
+      <Form title="Signin" link="/signup" titlelink="Signup" />
     </C.Container>
   );
 };
