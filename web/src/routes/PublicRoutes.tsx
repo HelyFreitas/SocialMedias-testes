@@ -3,7 +3,7 @@ import { ForgotPassword } from "../pages/ForgotPassword";
 import { Signin } from "../pages/Signin";
 import { Signup } from "../pages/Signup";
 
-export const Rotas = () => {
+export const PublicRoutes = () => {
   return (
     <Router>
       <Routes>
